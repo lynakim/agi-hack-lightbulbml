@@ -30,7 +30,7 @@ class Logger:
             experiments = pathlib.Path(self.get_git_root()) / "experiments"
 
         global EXPERIMENT_DIR
-        assert EXPERIMENT_DIR is None
+        # assert EXPERIMENT_DIR is None
         datetime_now = datetime.now()
         date = datetime_now.strftime("%Y%m%d")
         timestamp = int(datetime_now.timestamp())
